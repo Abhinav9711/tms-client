@@ -41,7 +41,7 @@ function DragNDrop({ data, email }) {
             })
             newList = JSON.parse(JSON.stringify(list))
             newList[params.key].items.splice(params.itemI, 0, newList[currentItem.key].items.splice(currentItem.itemI, 1)[0])
-            await axios.put(`https://task-management-system.cyclic.app/user/update`, {
+            await axios.put(`https://tms-server.cyclic.app/user/update`, {
                 list: newList,
                 email
             })
@@ -113,7 +113,7 @@ function Addtask(props) {
         task.items[itemI] = item;
         list[key1] = task
 
-        await axios.put('https://task-management-system.cyclic.app/user/update', {
+        await axios.put('https://tms-server.cyclic.app/user/update', {
             list, email
         })
         setList(list);

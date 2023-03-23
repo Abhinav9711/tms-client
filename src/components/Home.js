@@ -12,7 +12,7 @@ function Home() {
     const [data, setData] = useState(taskDetails);
 
     async function refreshedPage() {
-        const response = await axios.post(`https://task-management-system.cyclic.app/user/task`, {
+        const response = await axios.post(`https://tms-server.cyclic.app/user/task`, {
             email
         })
         const { data = '' } = response.data;
@@ -77,7 +77,7 @@ function Addtask(props) {
         }
         setError(false);
 
-        const response = await axios.post('https://task-management-system.cyclic.app/user/create', {
+        const response = await axios.post('https://tms-server.cyclic.app/user/create', {
             title, description, status, email: props.email
         });
         props.setData(response.data.data)

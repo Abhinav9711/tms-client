@@ -14,7 +14,7 @@ function Signup() {
     async function handleSubmit(e) {
         e.preventDefault();
         console.log('user account creating...')
-        const response = await axios.post(`https://task-management-system.cyclic.app/user/signup`, {
+        const response = await axios.post(`https://tms-server.cyclic.app/user/signup`, {
             name, email, number, password, confirmPassword
         });
         const { status, message, data = '' } = response.data;

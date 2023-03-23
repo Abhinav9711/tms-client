@@ -11,7 +11,7 @@ function Login() {
     async function handleLogin(e) {
         e.preventDefault();
         console.log('sigining...')
-        const response = await axios.post(`https://task-management-system.cyclic.app/user/signin`, {
+        const response = await axios.post(`https://tms-server.cyclic.app/user/signin`, {
             email,
             password
         })
