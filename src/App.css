@@ -1,0 +1,200 @@
+.App {
+  text-align: center;
+  background-color: #c6cbd4;
+  gap: .5rem;
+  /* margin-left: 50px; */
+  /* margin-top: 10px; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.button {
+  size: 'sm';
+  font-size:medium;
+  background-color:rgb(164, 201, 177)
+}
+
+.task-button {
+
+  font-size:x-large;
+  background-color:#666;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 1500px;
+  font-style:oblique ;
+  font-size-adjust: inherit;
+  font-stretch: condensed;
+  cursor: pointer;
+  display: inline-block;
+  border: 4px double #cccccc; /* add this line */
+  border-radius: 10px; /* add this line */
+  
+}
+
+.task-button:hover {background-color: #678898}
+
+.table {
+  justify-content: center;
+}
+
+.drag-n-drop {
+  padding: .5rem;
+  display: grid;
+  gap: .5rem;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(auto-fill, 400px);
+  align-items: start;
+  justify-content: center;
+  margin-left: 13%;
+}
+.dnd-group {
+  background-color: #49505e;
+  border-radius: 5px;
+  padding: .5rem;
+  margin-left: 20px;
+  text-transform:capitalize;
+}
+.dnd-group1 {
+  display: flex;
+  padding: .5rem;
+  display: grid;
+  gap: .5rem;
+ 
+  text-transform:capitalize;
+  align-items: start;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.dnd-item {
+  /* display: flex; */
+  justify-content: left;
+  align-items: start;
+  min-height: 200px;
+  background-color: white;
+  border-radius: 5px;
+  color: #282c34;
+  cursor: pointer;
+  /* font-weight: bold; */
+}
+.dnd-item:not(:last-of-type) {
+  /* margin-bottom: .5rem; */
+  margin-bottom: 20px;
+}
+.dnd-item * {  
+  margin: 0;
+  font-size: 1.2rem;
+}
+.group-title {
+  text-align: left;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+}
+.current {
+  background-color: #282c34;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.input-form {
+  text-align: center
+}
+
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+ 
+.box {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+ 
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(15% - 30px);
+  top: calc(100vh - 85vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+.container {
+  padding: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.login {
+  text-align: center;
+  gap: .5rem;
+  margin-top: 50px;
+  width:100%;
+  background-color: #fff;
+}
+
+input[type=email], input[type=password] , input[type=text]{
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-left: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
