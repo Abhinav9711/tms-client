@@ -32,7 +32,7 @@ function Login() {
     return (
         <div className='login'>
             <h1 style={{textAlign:'left', marginLeft:'50px', marginBottom: '100px'}}>Task Management System |  - <i>Abhinav</i> &#128516;</h1>
-            <h2 style={{ marginLeft: '30px', marginBottom: '30px' }}>Login Existing User</h2>
+            <h2 style={{ marginLeft: '50px', marginBottom: '30px' }}>Login - Existing User</h2>
             <div class="container">
                 <label for="uname"><b>Username</b></label>
                 <input type="email" placeholder="Enter Email" name="email" required onChange={(e) => { setEmail(e.target.value) }} /> <br />
